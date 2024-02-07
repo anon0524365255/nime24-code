@@ -1,0 +1,16 @@
+{
+    "preset": {
+        "amp_env.decay": 750.0,
+        "freq_env.decay": 250.0,
+        "osc.freq": 150.0,
+        "osc.mod": 0.6,
+        "tanh.in_gain": 2.0,
+        "gain.gain": -6.0,
+        "noise_env.decay": 100.0,
+        "tonal_gain.gain": -6.0,
+        "noise_gain.gain": -20.0
+    },
+    "damping": {
+        "osc.freq": 0.01
+    }
+}

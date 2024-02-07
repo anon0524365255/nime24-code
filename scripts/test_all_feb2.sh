@@ -1,0 +1,15 @@
+torchdrum-test logs_linear_2048_train_feb2/lightning_logs test_logs_linear_2048_train_feb2
+
+torchdrum-test logs_linear_train_feb2/lightning_logs test_logs_linear_train_feb2
+
+torchdrum-test logs_mlp_2048_train_feb2/lightning_logs test_logs_mlp_2048_train_feb2
+
+torchdrum-test logs_mlp_train_feb2/lightning_logs test_logs_mlp_train_feb2
+
+torchdrum-test logs_mlp_lrg_2048_train_feb2/lightning_logs test_logs_mlp_lrg_2048_train_feb2
+
+torchdrum-test logs_mlp_lrg_train_feb2/lightning_logs logs_mlp_lrg_train_feb2
+
+mkdir -p test_logs_feb4
+mv test_logs_linear_2048_train_feb2 test_logs_linear_train_feb2 test_logs_mlp_2048_train_feb2 test_logs_mlp_train_feb2 test_logs_mlp_lrg_2048_train_feb2 test_logs_mlp_lrg_train_feb2 test_logs_feb4
+tar czf test_logs_feb4.tar.gz test_logs_feb4

@@ -1,0 +1,18 @@
+model:
+  class_path: torchdrum.tasks.TorchDrumIntervalMatch
+  init_args:
+    synth: synths/simple_drum_synth.yaml
+    feature: features/feature_interval.yaml
+    loss_fn: torchdrum.loss.FeatureDifferenceLoss
+    preset: cfg/presets/drum_1.json
+optimizer:
+  class_path: torch.optim.Adam
+  init_args:
+    lr: 0.001
+data: data/snare_1_interval.yaml
+trainer:
+  devices: [0]
+  accelerator: gpu
+  max_epochs: 1
+  callbacks:
+    - class_path: torchdrum.callback.SaveTimbreIntervalAudio
